@@ -1,0 +1,66 @@
+---
+title: "El arte de modelar"
+author: "Grupo A"
+date: "2024-12-14"
+lang: "es-ES"
+description: "Una exploración en profundidad sobre el valor de la programación en el desarrollo profesional y académico."
+format:
+  html:
+    toc: true
+    toc-location: left
+    number-sections: true
+    embed-resources: true
+    smooth-scroll: true
+    anchor-sections: true
+    output-file: index.html
+    fontsize: 1.1em
+    linestretch: 1.7
+    css: st.css
+    highlight-style: monokai
+    code-fold: true
+analytics: UA-XXXXXXXX-X
+disqus: "tu-nombre-en-disqus"
+navbar:
+  title: "El arte de modelar"
+  left:
+    - text: "Inicio"
+      href: "#"
+    - text: "Secciones"
+      href: "#secciones"
+    - text: "Contacto"
+      href: "#contacto"
+  right:
+    - text: "Idioma"
+      href: "#lang"
+editor_options: 
+  chunk_output_type: console
+---
+
+# Introducción
+
+En el contexto del análisis de datos y aprendizaje automático, herramientas como **ImageJ**, **Anaconda**, **Python** y **Label Studio** desempeñan un papel crucial. Cada una ofrece funcionalidades específicas para diferentes etapas de un proyecto: desde la adquisición y preprocesamiento de imágenes hasta la anotación de datos y el entrenamiento de modelos.
+Este informe presenta una guía detallada sobre la instalación, configuración y uso de estas herramientas. Además, se explicará el procedimiento para entrenar un modelo con datos anotados en Label Studio, integrándolos a un entorno en RStudio.
+
+
+# Programas
+
+## ImageJ
+
+ImageJ es un software de código abierto diseñado para el análisis de imágenes multidimensionales. Es ampliamente utilizado en investigaciones biomédicas y científicas debido a su capacidad para realizar tareas como la medición de áreas, el conteo de partículas y la aplicación de transformaciones a imágenes.
+
+![Descripción de la imagen](https://imagej.net/ij/images/imagej-logo.gif) 
+
+**Usos principales**
+
+- Análisis cuantitativo de imágenes (medición de áreas, perímetros y más).
+
+- Aplicación de filtros para mejorar la calidad de las imágenes.
+
+- Automatización de tareas repetitivas mediante macros.
+
+- Segmentación de regiones específicas en imágenes.
+
+## Anaconda
+
+Anaconda es una distribución de Python y R que simplifica la gestión de bibliotecas y entornos de desarrollo. Incluye herramientas como Jupyter Notebook y Spyder, y se utiliza principalmente en análisis de datos, aprendizaje automático y otras aplicaciones científicas.
+![Descripción de la imagen](https://www.pngitem.com/pimgs/m/241-2413548_logo-anaconda-python-hd-png-download.png)
