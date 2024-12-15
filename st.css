@@ -74,3 +74,51 @@ img {
     margin: 20px auto; /* Centrar la imagen */
     max-width: 100%; /* Escalar la imagen dentro del contenedor */
 }
+
+/* Imagen fija en el lado izquierdo */
+.imagen-izquierda {
+  position: fixed;            /* Hace que la imagen se quede fija al hacer scroll */
+  left: 0;                    /* Fija la imagen al lado izquierdo de la ventana */
+  top: 0px;                 /* Distancia desde el borde superior de la página */
+  width: 360px;               /* Puedes ajustar el tamaño de la imagen */
+  border: 2px solid #ddd;     /* Borde sutil */
+  border-radius: 8px;         /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  z-index: 10;                /* Asegura que la imagen quede por encima de otros elementos */
+}
+
+/* Imagen fija en el lado derecho */
+.imagen-derecha {
+  position: fixed;            /* Hace que la imagen se quede fija al hacer scroll */
+  right: 0;                   /* Fija la imagen al lado derecho de la ventana */
+  top: 0px;                 /* Distancia desde el borde superior de la página */
+  width: 280px;               /* Ajusta el tamaño de la imagen */
+  border: 2px solid #ddd;     /* Borde sutil */
+  border-radius: 8px;         /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  z-index: 10;                /* Asegura que la imagen quede por encima de otros elementos */
+}
+
+/* Imagen fija en el lado izquierdo */
+.imagen-left {
+  position: fixed;            /* Hace que la imagen se quede fija al hacer scroll */
+  left: 0;                    /* Fija la imagen al lado izquierdo de la ventana */
+  top: 250px;                 /* Distancia desde el borde superior de la página */
+  width: 360px;               /* Puedes ajustar el tamaño de la imagen */
+  border: 2px solid #ddd;     /* Borde sutil */
+  border-radius: 8px;         /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  z-index: 10;                /* Asegura que la imagen quede por encima de otros elementos */
+}
+
+/* Imagen fija en el lado izquierdo */
+.imagen-leftt {
+  position: fixed;            /* Hace que la imagen se quede fija al hacer scroll */
+  left: 0;                    /* Fija la imagen al lado izquierdo de la ventana */
+  top: 500px;                 /* Distancia desde el borde superior de la página */
+  width: 360px;               /* Puedes ajustar el tamaño de la imagen */
+  border: 2px solid #ddd;     /* Borde sutil */
+  border-radius: 8px;         /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  z-index: 10;                /* Asegura que la imagen quede por encima de otros elementos */
+}

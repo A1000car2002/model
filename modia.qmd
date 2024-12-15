@@ -7,7 +7,7 @@ description: "Una exploración en profundidad sobre el valor de la programación
 format:
   html:
     toc: true
-    toc-location: left
+    toc-location: right
     number-sections: true
     embed-resources: true
     smooth-scroll: true
@@ -35,6 +35,12 @@ navbar:
 editor_options: 
   chunk_output_type: console
 ---
+![](https://farallonesdelcitara.bioexploradores.com/wp-content/uploads/2022/10/IMG_3619-2-1201x631.jpg){.imagen-derecha}
+
+![](https://img.freepik.com/fotos-premium/ilustracion-digital-campo-verde-maiz_993599-11828.jpg?w=900){.imagen-izquierda}
+![](https://img.freepik.com/vector-premium/inteligencia-artificial-sosteniendo-planta-mano_182292-71.jpg?w=900){.imagen-left}
+
+![](https://img.freepik.com/fotos-premium/tecnologia-energia-verde-planta-verde-noche_993599-8169.jpg?w=900){.imagen-leftt}
 
 # Introducción
 
@@ -64,3 +70,115 @@ ImageJ es un software de código abierto diseñado para el análisis de imágene
 
 Anaconda es una distribución de Python y R que simplifica la gestión de bibliotecas y entornos de desarrollo. Incluye herramientas como Jupyter Notebook y Spyder, y se utiliza principalmente en análisis de datos, aprendizaje automático y otras aplicaciones científicas.
 ![Descripción de la imagen](https://www.pngitem.com/pimgs/m/241-2413548_logo-anaconda-python-hd-png-download.png)
+
+**Usos principales**
+- Creación de entornos virtuales independientes.
+
+- Instalación de herramientas como Jupyter Notebook y bibliotecas para análisis y aprendizaje automático (Scikit-learn, TensorFlow, etc.).
+
+- Gestión eficiente de proyectos con distintas configuraciones.
+
+## Label Studio
+
+Label Studio es una herramienta de código abierto para la anotación de datos. Permite realizar tareas de etiquetado en texto, imágenes, audio y video, facilitando la creación de conjuntos de datos listos para el entrenamiento de modelos de aprendizaje automático.
+![Descripción de la imagen](https://user-images.githubusercontent.com/12534576/192582340-4c9e4401-1fe6-4dbb-95bb-fdbba5493f61.png)
+
+**Usos principales**
+- Creación de conjuntos de datos etiquetados para entrenar modelos de IA.
+
+- Colaboración en equipo para garantizar anotaciones consistentes.
+
+- Exportación de datos en formatos como JSON o CSV para integrarlos en flujos de trabajo de aprendizaje automático.
+
+# Instalación de herramientas para anotación de datos
+
+## Instalación de Anaconda
+- Descargar el instalador desde `https://www.anaconda.com/`
+
+- Ejecutar el archivo descargado
+
+- Seguir las instrucciones del instalador
+
+- Verificar la instalación ejecutando conda list en el terminal
+
+## Instalación de Label Studio
+Label Studio ofrece cuatro métodos de instalación: a través de pip, brew, Git y Docker. En esta guía, nos centraremos en el método de instalación de pip. Para instalar Label Studio a través de pip, ejecute el siguiente comando:
+
+`pip install label-studio`
+
+Una vez que haya instalado Label Studio, puede ejecutar la aplicación utilizando el siguiente comando:
+
+`label-studio`
+
+Se abrirá la aplicación Label Studio:
+
+![Descripción de la imagen](https://blog.roboflow.com/content/images/size/w1000/2024/04/image-921.webp)
+
+Cuando abras Label Studio por primera vez, se te solicitará que crees una cuenta. Haz clic en “Registrarse” si aún no tienes una cuenta.
+
+# Subir imágenes a Label Studio
+
+Antes de cargar imágenes para realizar anotaciones, debemos crear un proyecto en el que se almacenarán nuestras imágenes. Haga clic en el botón “Crear proyecto” en la página de inicio de Label Studio:
+
+![Descripción de la imagen](https://blog.roboflow.com/content/images/size/w1000/2024/04/image-924.webp)
+
+A continuación, elija un nombre para su proyecto. Si lo desea, especifique una descripción para su proyecto.
+
+![Descripción de la imagen](https://blog.roboflow.com/content/images/size/w1000/2024/04/image-931.webp)
+
+A continuación, haga clic en **Data import**. Aquí, puede cargar imágenes y videos en una variedad de formatos para usar en el etiquetado.
+
+![Descripción de la imagen](https://blog.roboflow.com/content/images/size/w1000/2024/04/image-937.webp)
+
+Puede cargar hasta 100 imágenes a la vez mediante la interfaz web.
+
+A continuación, haga clic en “Configuración de etiquetado” y elija un tipo de tarea.En nuestro caso elegimos **Semantic Segmentation with Polygons** 
+![](lb.png)
+
+Una vez que haya seleccionado un tipo de tarea, aparecerá una interfaz de usuario del entorno de etiquetado para el tipo de tarea elegido.
+
+![](lbb.png)
+En la barra lateral, elimine las etiquetas predeterminadas y agregue las etiquetas que agregará a las imágenes en su conjunto de datos. Para esta guía, agregaremos dos etiqueta:
+
+`leaf`
+
+`coin`
+
+Cuando esté listo, haga clic en “Guardar” para guardar su configuración e ingresar a la herramienta de etiquetado.
+
+Para comenzar a etiquetar, haz clic en “Etiquetar todas las tareas” en el panel de control de tu proyecto. Si quieres etiquetar una imagen específica, haz clic en la imagen que deseas etiquetar.
+![](lc.png)
+
+# Anotación en Label Studio
+
+# Cómo exportar datos de Label Studio
+
+Para exportar datos desde Label Studio, dirígete a la página de inicio de tu proyecto y haz clic en el botón **Export**. Aparecerá una lista de opciones de exportación.
+
+![Descripción de la imagen](https://blog.roboflow.com/content/images/size/w1000/2024/04/image-971.webp)
+
+# Entrenamiento del modelo de aprendizaje
+
+# Validación del modelo de aprendizaje 
+
+
+# Conclusiones
+
+Con Label Studio, puede anotar datos para una variedad de tipos de tareas de aprendizaje automático, desde el procesamiento del lenguaje natural hasta la visión artificial. Label Studio ofrece dos opciones: Community Edition, donde usted mismo hospeda la herramienta de anotación, y Enterprise, donde Human Signal ofrece una versión hospedada de Label Studio con funciones adicionales.
+
+# Bibliografía
+
+Challenger Pérez, Ivet, Yanet Díaz Ricardo, and Roberto Antonio Becerra García. 2014. “El Lenguaje de Programación Python/The Programming Language Python.” Revista Ciencias Holguín 20:1–13.
+
+Gomez Ernesto, Soto. 2021. “Python En Ingeniería En Ciencias Informáticas: Proyecciones Las Dimensiones Práctica, Científica y Social.” Serie Científica de La Universidad de Las Ciencias Informáticas 14(12):7–8.
+
+Martín, Enrique, and Fernando Sáenz. 2016. “Sistema ANACONDA Para El Análisis Automático de La Calidad Del Software.” Telefónica Móviles España.
+
+Abràmoff, M., Magalhães, P. J., & Ram, S. (2004). Image processing with ImageJ.
+Kakkar, G. T., Rajoria, A., Kalluraya, M. P., Raju, A., Cao, J., Rong, K., & Arulraj, J. (2023). Interactive Demonstration of EVA. Proceedings of the VLDB Endowment, 16(12), 4082–4085. https://doi.org/10.14778/3611540.3611626
+
+Schroeder, A. B., Dobson, E. T. A., Rueden, C. T., Tomancak, P., Jug, F., & Eliceiri, K. W. (2020). The ImageJ ecosystem: Open‐source software for image visualization, processing, and analysis. Protein Science, 30(1), 234–249. https://doi.org/10.1002/PRO.3993
+
+Tessmer, M. H., & Stoll, S. (2022). chiLife: An open-source Python package for in silico spin labeling and integrative protein modeling. BioRxiv, 19(3). https://doi.org/10.1371/JOURNAL.PCBI.1010834
+
+Weistrand, O., & Svensson, S. (2015). The ANACONDA algorithm for deformable image registration in radiotherapy. Medical Physics, 42(1), 40–53. https://doi.org/10.1118/1.4894702
