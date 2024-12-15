@@ -1,9 +1,9 @@
 ---
 title: "El arte de modelar"
 author: "Grupo A"
-date: "2024-12-14"
+date: "2024-12-16"
 lang: "es-ES"
-description: "Una exploración en profundidad sobre el valor de la programación en el desarrollo profesional y académico."
+description: "Una exploración en profundidad sobre el aprendizaje automático para la creación de modelos predictivos"
 format:
   html:
     toc: true
