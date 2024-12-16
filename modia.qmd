@@ -216,9 +216,6 @@ saveRDS(modelo, "modelo_clasificacion_hojas.rds")
 ```
 
 
-# Validación del modelo de aprendizaje 
-
-
 # Conclusiones
 
 Con Label Studio, puede anotar datos para una variedad de tipos de tareas de aprendizaje automático, desde el procesamiento del lenguaje natural hasta la visión artificial. Label Studio ofrece dos opciones: Community Edition, donde usted mismo hospeda la herramienta de anotación, y Enterprise, donde Human Signal ofrece una versión hospedada de Label Studio con funciones adicionales.
