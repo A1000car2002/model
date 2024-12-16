@@ -151,10 +151,7 @@ Para comenzar a etiquetar, haz clic en “Etiquetar todas las tareas” en el pa
 
 # Anotación en Label Studio
 
-<video controls width="640">
-  <source src="labelst-VEED.mp4" type="video/mp4">
-  Tu navegador no soporta el elemento <code>video</code>. Puedes descargar el video <a href="labelst-VEED.mp4">aquí</a>.
-</video>
+![](ll.png)
 
 # Cómo exportar datos de Label Studio
 
