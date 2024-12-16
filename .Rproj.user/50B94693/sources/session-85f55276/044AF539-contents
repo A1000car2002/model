@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f9f3; /* Fondo suave y claro */
+    color: #4d6e41; /* Verde oscuro para el texto */
+    margin: 0;
+    padding: 0;
+    text-align: justify; /* Justificar el texto */
+}
+
+/* Encabezado */
+header {
+    background-color: #a8d5ba; /* Verde suave para el fondo */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navegación */
+nav {
+    background-color: #89bfae; /* Verde medio */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #4d6e41; /* Verde más oscuro al pasar el cursor */
+    border-radius: 5px;
+}
+
+/* Sección principal */
+.main-content {
+    padding: 40px;
+    background-color: #e9f7f3; /* Fondo muy suave */
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #4d6e41; /* Verde oscuro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3b5d35; /* Verde aún más oscuro */
+}
+
+/* Pie de página */
+footer {
+    background-color: #a8d5ba; /* Igual que el encabezado */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+img {
+    border: 2px solid #4d6e41; /* Borde verde */
+    border-radius: 8px; /* Esquinas redondeadas */
+    display: block;
+    margin: 20px auto; /* Centrar la imagen */
+    max-width: 100%; /* Escalar la imagen dentro del contenedor */
+}
+
+/* Imagen fija en el lado izquierdo */
+.imagen-izquierda {
+  position: fixed;            /* Hace que la imagen se quede fija al hacer scroll */
+  left: 0;                    /* Fija la imagen al lado izquierdo de la ventana */
+  top: 0px;                 /* Distancia desde el borde superior de la página */
+  width: 200px;               /* Puedes ajustar el tamaño de la imagen */
+  border: 2px solid #ddd;     /* Borde sutil */
+  border-radius: 8px;         /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  z-index: 10;                /* Asegura que la imagen quede por encima de otros elementos */
+}
+
+/* Imagen fija en el lado derecho */
+.imagen-derecha {
+  position: fixed;            /* Hace que la imagen se quede fija al hacer scroll */
+  left: 0;                   /* Fija la imagen al lado derecho de la ventana */
+  top: 450px;                 /* Distancia desde el borde superior de la página */
+  width: 200px;               /* Ajusta el tamaño de la imagen */
+  border: 2px solid #ddd;     /* Borde sutil */
+  border-radius: 8px;         /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  z-index: 10;                /* Asegura que la imagen quede por encima de otros elementos */
+}
+
+/* Imagen fija en el lado izquierdo */
+.imagen-left {
+  position: fixed;            /* Hace que la imagen se quede fija al hacer scroll */
+  left: 0;                    /* Fija la imagen al lado izquierdo de la ventana */
+  top: 150px;                 /* Distancia desde el borde superior de la página */
+  width: 200px;               /* Puedes ajustar el tamaño de la imagen */
+  border: 2px solid #ddd;     /* Borde sutil */
+  border-radius: 8px;         /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  z-index: 10;                /* Asegura que la imagen quede por encima de otros elementos */
+}
+
+/* Imagen fija en el lado izquierdo */
+.imagen-leftt {
+  position: fixed;            /* Hace que la imagen se quede fija al hacer scroll */
+  left: 0;                    /* Fija la imagen al lado izquierdo de la ventana */
+  top: 300px;                 /* Distancia desde el borde superior de la página */
+  width: 200px;               /* Puedes ajustar el tamaño de la imagen */
+  border: 2px solid #ddd;     /* Borde sutil */
+  border-radius: 8px;         /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  z-index: 10;                /* Asegura que la imagen quede por encima de otros elementos */
+}
