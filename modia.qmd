@@ -151,13 +151,67 @@ Para comenzar a etiquetar, haz clic en “Etiquetar todas las tareas” en el pa
 
 # Anotación en Label Studio
 
+
+
 # Cómo exportar datos de Label Studio
 
 Para exportar datos desde Label Studio, dirígete a la página de inicio de tu proyecto y haz clic en el botón **Export**. Aparecerá una lista de opciones de exportación.
 
-![Descripción de la imagen](https://blog.roboflow.com/content/images/size/w1000/2024/04/image-971.webp)
+![](https://blog.roboflow.com/content/images/size/w1000/2024/04/image-971.webp)
 
 # Entrenamiento del modelo de aprendizaje
+
+```{r}
+library(caret)
+library(dplyr)
+library(jsonlite)
+library(tidyverse)
+library(rpart)
+library(rpart.plot)
+
+# Ruta al archivo JSON (ajusta esta ruta)
+json_file <- "result.json"
+
+# Cargar y explorar los datos
+raw_data <- fromJSON(json_file, flatten = TRUE)
+
+# Preparar los datos
+annotations <- raw_data$annotations %>% as.data.frame()
+images <- raw_data$images %>% as.data.frame()
+categories <- raw_data$categories %>% as.data.frame()
+
+# Relacionar las tablas mediante "image_id" y "category_id"
+data <- annotations %>%
+  left_join(images, by = c("image_id" = "id")) %>%
+  left_join(categories, by = c("category_id" = "id"))
+
+# Seleccionar columnas relevantes (puedes ajustar según tu necesidad)
+data <- data %>%
+  select(file_name, width, height, category_id, name) %>%
+  mutate(category_id = as.factor(category_id),
+         name = as.factor(name))
+
+# Dividir los datos en conjuntos de entrenamiento y prueba
+set.seed(123)
+train_index <- createDataPartition(data$category_id, p = 0.8, list = FALSE)
+train_data <- data[train_index, ]
+test_data <- data[-train_index, ]
+
+# Entrenar un modelo de clasificación (Árbol de decisión)
+modelo <- rpart(category_id ~ width + height, data = train_data, method = "class")
+
+# Visualizar el árbol de decisión
+rpart.plot(modelo)
+
+# Evaluar el modelo
+predicciones <- predict(modelo, newdata = test_data, type = "class")
+matriz_confusion <- confusionMatrix(predicciones, test_data$category_id)
+print(matriz_confusion)
+
+# Guardar el modelo entrenado
+saveRDS(modelo, "modelo_clasificacion_hojas.rds")
+```
+
 
 # Validación del modelo de aprendizaje 
 
